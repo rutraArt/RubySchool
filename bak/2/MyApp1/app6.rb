@@ -1,0 +1,1 @@
+puts 100.times{|i| puts "i=#{i}"}
