@@ -1,0 +1,11 @@
+<h2> Вот они барадатые !!!</h2>
+
+<h1> <%= @title %> </h1>
+
+<table>
+<% @file.each_line do |line| %>
+  <tr><td><%= line %></td></tr>
+<% end %>
+</table>
+
+<%= @file.close %>
