@@ -16,12 +16,10 @@ post '/' do
 	@title = 'Thank you!'
 	@message = "Dear #{@user_name}, we'll be waiting for you at #{@date_time}"
 
-	f = File.open 'user.txt', 'a'
+	f = File.open './public/user.txt', 'a'
 	f.write "User: #{@user_name}, Phone: #{@phone}, Date and time #{@date_time}.\n"
 
 	erb :message
-	sleep 5
-	erb :index
 end
 
 post '/admin' do
@@ -31,7 +29,7 @@ post '/admin' do
 	if @login == 'ruby' && @password == 'rails'
 		@title = 'Список посетителей!'
 
-		@file = File.open("./user.txt", "r")
+		@file = File.open("./public/user.txt", "r")
 
 		erb :result
 	else
