@@ -1,0 +1,13 @@
+User: admin, Phone: +74991133618, Date and time 19.03.2022.
+User: Артур, Phone: +74991133618, Date and time 19.03.2022.
+User: Артур, Phone: +74991133618, Date and time 19.03.2022.
+User: Артур, Phone: +74991133618, Date and time 19.03.2022.
+User: Артур, Phone: +74991133618, Date and time 19.03.2022.
+User: Artur_Chaban, Phone: +74991133618, Date and time 19.03.2022.
+User: , Phone: , Date and time .
+User: , Phone: , Date and time .
+User: Артур, Phone: 333, Date and time: 19.03.2022, Парикмахер: s2
+User: Артур, Phone: +375297177959, Date and time: 19.03.2022, Парикмахер: Jessie Pinkman
+User: Artur_Chaban, Phone: +375297177959, Date and time: 19.03.2022, Парикмахер: Gus Fring
+User: admin, Phone: +74991133618, Date and time: 19.03.2022, Парикмахер: Jessie Pinkman
+User: admin, Phone: +375(29)717-79-59, Date and time: 19.03.2022, Парикмахер: Walter White
