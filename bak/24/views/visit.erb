@@ -10,19 +10,25 @@
 		<option value="Gus Fring">Gus Fring</option>
 	</select>  -->
 
+<script type="text/javascript">
+	$(function(){
+		$('#color').simplecolorpicker();
+	});
+</script>
+
 	<div class="form-group">
 		<label >Ваше имя</label>
-		<input name="username" type="text" class="form-control" placeholder="Введите Ваше имя ...">
+		<input name="username" type="text" class="form-control" placeholder="Введите Ваше имя ..." value="<%= @username %>">
 	</div>
 
 	<div class="form-group">
 		<label >Телефон</label>
-		<input name="phone" type="text" class="form-control" placeholder="Введите Ваш номер телевона ...">
+		<input name="phone" type="text" class="form-control" placeholder="Введите Ваш номер телевона ..." value="<%= @phone %>">
 	</div>
 
 	<div class="form-group">
 		<label >Дата записи</label>
-		<input name="date" type="text" class="form-control" placeholder="Введите дату и время ...">
+		<input name="date" type="text" class="form-control" placeholder="Введите дату и время ..." value="<%= @date %>">
 	</div>
 
 	<div class="form-group">
@@ -54,9 +60,3 @@
 
 	<button type="submit" class="btn btn-primary">Записаться</button>
 </form>
-
-<script type="text/javascript">
-	$(function(){
-		$('#color').simplecolorpicker();
-	});
-</script>
