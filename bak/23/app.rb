@@ -20,9 +20,11 @@ post '/visit' do
 	@username = params[:username]
 	@phone = params[:phone]
 	@date = params[:date]
+	@color = params[:color]
 
 	@title = 'Спасибо! Приходи не бойся, уходи не плач!'
-	@message = "Дорогой (ая) #{@username}, мы ждем Вас #{@date}, Вы записанны к #{@hero}"
+	@message = "Дорогой (ая) #{@username}, мы ждем Вас #{@date}, Вы записанны к #{@hero}, странный выбор 
+	но голова будет покрашена в #{@color}."
 
 	f = File.open './public/user.txt', 'a'
 	f.write "User: #{@username}, Phone: #{@phone}, Date and time: #{@date}, Парикмахер: #{@hero}\n"
