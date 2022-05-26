@@ -2,13 +2,13 @@
 <p>На этой страницы Вы можите записаться к нам в Barber Shop</p>
 
 <form action="/visit" method="POST">
-
+<!-- 
 	<p><strong>Выбери парикмахера!</strong></p>
 		<p><select name="hero">
 		<option value="Walter White">Walter White</option>
 		<option value="Jessie Pinkman">Jessie Pinkman</option>
 		<option value="Gus Fring">Gus Fring</option>
-	</select> 
+	</select>  -->
 
 	<div class="form-group">
 		<label >Ваше имя</label>
@@ -27,7 +27,7 @@
 
 	<div class="form-group">
 		<label >Ваш парикмахер</label>
-		<select class="form-control">
+		<select name="hero" class="form-control">
 			<option>Walter White</option>
 			<option>Jessie Pinkman</option>
 			<option>Gus Fring</option>
@@ -36,3 +36,7 @@
 
 	<button type="submit" class="btn btn-primary">Записаться</button>
 </form>
+
+<script type="text/javascript">
+	alert('Hello from visit page!');
+</script>

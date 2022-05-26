@@ -11,3 +11,4 @@ User: Артур, Phone: +375297177959, Date and time: 19.03.2022, Парикм�
 User: Artur_Chaban, Phone: +375297177959, Date and time: 19.03.2022, Парикмахер: Gus Fring
 User: admin, Phone: +74991133618, Date and time: 19.03.2022, Парикмахер: Jessie Pinkman
 User: admin, Phone: +375(29)717-79-59, Date and time: 19.03.2022, Парикмахер: Walter White
+User: admin, Phone: 333, Date and time: 19.03.2022, Парикмахер: Gus Fring
