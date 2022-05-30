@@ -25,17 +25,23 @@ post '/visit' do
 
 	hh = { :username => 'Введите имя!',
 			:phone => 'Введите номер телефона!',
-			:date => 'Введите дату и время' }
+			:date => 'Введите дату и время!' }
 
 			# для каждой пары ключ-значение 
-	hh.each do |key, value|
-		if params[key] == ''
 
-			@error = hh[key]
+	@error =hh.select {|key,_| params[key] == ""}.values.join(", ")
 
-			return erb :visit 
-		end
+	if @error != ''
+		return erb :visit
 	end
+	# hh.each do |key, value|
+	# 	if params[key] == ''
+
+	# 		@error = hh[key]
+
+	# 		return erb :visit 
+	# 	end
+	# end
 
 	@title = 'Спасибо! Приходи не бойся, уходи не плач!'
 	@message = "Дорогой (ая) #{@username}, мы ждем Вас #{@date}, Вы записанны к #{@hero}, странный выбор 
