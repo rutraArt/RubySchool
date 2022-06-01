@@ -2,6 +2,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/reloader'
+# require 'pony'
 
 get '/' do
 	erb "Hello! <a href=\"https://github.com/bootstrap-ruby/sinatra-bootstrap\">Original</a> pattern has been modified for <a href=\"http://rubyschool.us/\">Ruby School</a>"			
@@ -29,11 +30,13 @@ post '/visit' do
 
 			# для каждой пары ключ-значение 
 
-	@error =hh.select {|key,_| params[key] == ""}.values.join(", ")
+	@error = hh.select {|key,_| params[key] == ""}.values.join(", ")
 
 	if @error != ''
 		return erb :visit
 	end
+
+	#   Как еще вариант !!!
 	# hh.each do |key, value|
 	# 	if params[key] == ''
 
@@ -66,6 +69,27 @@ post '/contacts' do
 
 	f_con = File.open './public/contacts.txt', 'a'
 	f_con.write "Email: #{@mail}, Отзыв: #{@text}"
+
+	
+	# Pony.mail(
+	#   :name => params[:name],
+	#   :mail => params[:mail],
+	#   :body => params[:body],
+	#   :to => 'everinartdik@gmail.com',
+	#   :subject => params[:name] + " has contacted you",
+	#   :body => params[:message],
+	#   :port => '587',
+	#   :via => :smtp,
+	#   :via_options => { 
+	#     :address              => 'smtp.gmail.com', 
+	#     :port                 => '587', 
+	#     :enable_starttls_auto => true, 
+	#     :user_name            => 'lumbee', 
+	#     :password             => 'p@55w0rd', 
+	#     :authentication       => :plain, 
+	#     :domain               => 'localhost.localdomain'
+	#   })
+	# redirect '/success' 
 
 	erb :message 
 end
