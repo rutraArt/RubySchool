@@ -1,4 +1,5 @@
 #encoding: utf-8
+require 'sqlite3'
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/reloader'
